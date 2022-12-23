@@ -5,7 +5,7 @@ const Projects = () => {
   const [projects, setProjects] = useState(null);
 
   const getProjectsData = async () => {
-    const res = await fetch("./projects.json");
+    const res = await fetch("https://portfolio-404-not-found.herokuapp.com/projects");
     const data = await res.json();
     setProjects(data);
   };
